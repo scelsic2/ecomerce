@@ -1,7 +1,7 @@
 {
-  "name": "module-13-challenge-orm",
+  "name": "ecomerce",
   "version": "1.0.0",
-  "description": "",
+  "description": "back end for an e-comerce site",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,8 +14,8 @@
     "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Cassandra R. Scelsi",
+  "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.3"
   },
