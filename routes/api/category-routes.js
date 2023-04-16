@@ -53,6 +53,20 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
+  Category.destroy({
+    where: {
+      id: req.params.id
+    }
+  })
+  .then(categoryDeleted => {
+    console.log("Category successfully deleted")
+    res.status(204).send();
+  })
+  .catch(error => {
+    console.log("error")
+    console.log(error);
+    res.status(500).send({ error: 'Failed to delete category ' + error });
+  })
 });
 
 module.exports = router;
