@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
       }
     })
     res.send(category);
-  } else res.send ("Error.")
+  } else res.send ("Cannot find Category with an associated Product.")
 
   // find one category by its `id` value
   // be sure to include its associated Products
