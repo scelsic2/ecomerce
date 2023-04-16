@@ -31,8 +31,11 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Products
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new category
+  const catData = req.body;
+  const newCat = await Category.create(catData);
+  res.send(newCat);
 });
 
 router.put('/:id', (req, res) => {
