@@ -33,7 +33,7 @@ router.get('/:id', async (req, res) => {
       ]
     })
     res.send(product);
-  } else res.send ("Error") 
+  } else res.send ("Cannot find Product with associated Category and Tags") 
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
 });
