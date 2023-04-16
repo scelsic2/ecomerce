@@ -10,6 +10,8 @@ Product.belongsTo(Category, {foreignKey: "category_id"});
 // Categories have many Products
 Category.hasMany(Product, {foreignKey: "category_id"});
 
+// https://github.com/jpd61/e-commerce-backend/blob/master/models/index.js
+
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {through: ProductTag, foreignKey: "product_id"});
 
